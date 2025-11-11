@@ -1,0 +1,96 @@
+<!-- @copilot generate: Create complete HTML5 file based on instructions below -->
+Create a single, self-contained HTML document that is a fully detailed, professional Budgeting and Financial Planning Report for OxyTree Hub Kedungkandang.
+
+The output must be a complete HTML file (one .html file) with inline CSS and inline JavaScript, so it can open and function in any modern browser without any external resources.
+Use the uploaded HTML template as the visual and layout reference for styling, structure, tabs, and interaction. Refer to the example file:
+My Boo Budget
+Match the template’s general look-and-feel (tabs, KPI cards, tables, chart placeholders, download area), but expand, enrich, and replace all content to exactly fit the OxyTree Hub Kedungkandang budgeting scope described below.
+Do not summarize, remove, or shorten any required sections — produce them all fully expanded with logical numeric values, formulas, justifications, and footnotes for each key assumption. Keep the tone in professional business English.
+IMPORTANT GUIDANCE ABOUT TOTALS: As a baseline target, structure the detailed CAPEX and OPEX so that the final Total CAPEX is approximately Rp 200,000,000,000 (two hundred billion Rupiah) and the Total Annual OPEX is approximately Rp 20,000,000,000 – Rp 25,000,000,000. If any detailed sub-totals or technical design decisions cause the totals to deviate materially from these targets, the report must (a) clearly state the resulting total, (b) explain the exact reason(s) for deviation with itemized line-level justification, and (c) show an alternative cost-reduced scenario that brings totals closer to the target while preserving operational readiness. Label all assumed or benchmarked items as Estimated where appropriate and show the calculation steps.
+REQUIRED SECTIONS
+(each must appear as a tab or clearly labeled section)
+Executive Summary — concise overview with KPI cards (Total CAPEX, Annual OPEX, Annual Revenue, Payback Years, Net Income Year 1, BEP year). Each KPI must include a one-sentence explanation and footnote with assumptions.
+Assumptions — list all assumptions (population served, water consumption per person potable & non-potable, electricity consumption per person, days/year, inflation, growth rates, corporate tax (PPh) and VAT handling, local permit fees, seasonal/peak factors, labor cost escalation). For each assumption include a one-line justification referencing either a source, local market benchmark, or logical reasoning.
+CAPEX (Detailed) — complete capital expenditure bill with columns: item name, unit, quantity, unit cost, subtotal, depreciation years, annual depreciation, and a one-line justification/source for each item. Must include at minimum:
+• Land: 5,996 m² at Rp 6,200,000,000 (use this exact figure).
+• Earthworks & drainage
+• Foundations
+• Buildings: education center, administration, plant room, museum, gallery, café, kiosks, workshop
+• AWG units (specify count & per-unit yield L/day)
+• Rainwater tanks (capacity in m³)
+• Filtration systems (UV/RO), sedimentation, and pre-treatment
+• Greywater reclamation system
+• Solar PV array (kW) + mounting & civil works
+• Inverters and balance-of-system items
+• Battery storage (kWh) and associated protections
+• EV chargers (AC / DC counts and power ratings)
+• Pumps, piping, valves, metering
+• Distribution network to satellite nodes (if specified)
+• On-site workshop & tools
+• Monitoring & IoT hardware and SCADA-lite system
+• Interior fit-out for tenant shell (café/kiosk)
+• Signage & wayfinding
+• Landscape & public realm works
+• Permit, legal, and licensing fees
+• Engineering, design, and construction management fees
+• Contingency (5–10%)
+For each CAPEX item include a short one-line source or benchmarking note (e.g., “Estimated — local contractor quote equivalent, Malang commercial build rates 2024”).
+Working Capital — raw materials and consumables (café ingredients, AWG consumables, filter cartridges), days of inventory, days of receivables, days of payables, cash buffer (months of OPEX). Show formulas and numeric values.
+OPEX (Detailed — Annual & Monthly) — provide a full operating budget assuming all facilities are built and ready to operate. This must include, but not be limited to:
+• Staff payroll: full organizational chart (~79 employees) with role, headcount, monthly salary, annual cost, and 20% on-cost for benefits (BPJS, allowances). Compute monthly and annual payroll totals.
+• Facility-specific operating budgets:
+    ◦ Café operations: barista payroll, raw ingredients, packaging, logistics/delivery, utility share, PPN/PPh, permits, cleaning, maintenance, equipment replacement schedule.
+    ◦ Education center: instructor/trainers, materials, curriculum upkeep, demonstration consumables.
+    ◦ Museum & gallery: curators, exhibit maintenance, security, lighting, display consumables.
+    ◦ Plant room & operational staff (AWG technicians, energy technicians, electricians).
+• Maintenance schedules & line items: AWG maintenance, filter replacement, RO membrane replacement, solar cleaning and inverter maintenance, battery maintenance, EV charger check & repair.
+• Utilities (grid backup energy, water top-up), insurance, property tax (PBB), monitoring & subscription fees, marketing & outreach, training & capacity building, transport/logistics, third-party services, and a 5% operational contingency.
+• Present monthly and annual totals and provide a short justification per line (source, benchmark, or calculation).
+Revenue Streams (Detailed) — for each revenue stream produce line-by-line unit economics, monthly and annual totals, and underlying assumptions:
+• Potable water sales: liters/day × days/year × price per liter. Show how potable vs non-potable split is derived (AWG + rain harvest + greywater top-up logic).
+• Non-potable water sales: bulk pricing for laundry / UMKM customers (discount tiers).
+• Electricity sales: kWh to households, kWh sold via EV chargers (session-based pricing and per-kWh), include assumed tariffs, distribution losses, and expected utilization (sessions/day).
+• Tenancy income: café/kiosk rental models (fixed rent vs revenue share — show both with formulas).
+• Ticketing revenue: education center, museum, and gallery — provide weekly calendar-style projections (weekday vs weekend, school season vs holiday) and project annual totals for conservative / base / optimistic scenarios.
+• Sponsorship / CSR / events / grants: provide conservative and optimistic annual scenarios.
+• Include an assumption table for utilization rates, occupancy, conversion rates, and explicit formulas linking activity to revenue.
+Profit & Loss / Cash Flow / Balance Summary — produce Year 0 (CAPEX + Working Capital) and Year 1–10 projections including income statement, cash flow statement, and a simple balance summary. Include depreciation schedules, apply inflation & growth rates from Assumptions, compute taxes, and provide commentary on year-to-year drivers.
+Financial Metrics & Analysis — calculate and interpret: Break-Even Point (in years and in units), Payback Period (simple and discounted), NPV (use at least three discount rates for sensitivity: e.g., 6%, 9%, 12%), IRR, ROI, gross margin, operating margin, and net margin. Provide short interpretation statements for each.
+Sensitivity Analysis — implement interactive sliders or input fields (vanilla JS) that allow ±10% and ±20% changes to core assumptions (selling prices, visitor numbers, solar production, AWG yield, OPEX). Recalculate and display key results (BEP, Payback, Net Income, NPV) live on the page. Show a sensitivity table / heatmap.
+Risk Register & Mitigation Plan — at least 12 risks covering technical, regulatory, weather/climate, supply chain, financial, and social acceptance. For each: estimated probability, estimated impact (financial estimate where possible), mitigation action, and expected mitigation cost (if applicable).
+Implementation Plan & Timeline — include a Gantt-like visual listing major phases: land acquisition, permitting, design, procurement, civil works, system installation, commissioning, pilot operation, and full operation. Provide durations and an earliest feasible completion date assuming normal lead times.
+Appendix / Notes — include all formulas, depreciation methods (straight-line and optionally accelerated), tax calculation examples (PPh corporate, PPN handling), sources/references for benchmarks, and downloadable CSV export for major tables.
+FUNCTIONAL & PRESENTATION REQUIREMENTS
+• Produce one single HTML5 file with inline CSS and inline JS only (no external CDN or asset links).
+• Tabs or equivalent UI must be keyboard accessible.
+• All core numeric tables must be editable (assumptions panel or editable cells) and derived tables/charts update immediately using vanilla JavaScript.
+• Charts must be implemented in plain JS (SVG or canvas) and include: CAPEX composition (pie), Revenue by stream (stacked bar or grouped bar), Cash flow over 10 years (line), and Sensitivity heatmap (color-coded table).
+• Include a “Download” area with:
+    ◦ Buttons to export CAPEX, OPEX, Revenues, and Payroll tables as CSV.
+    ◦ A button to open a print-friendly view and instructions for “Save as PDF” (client-side PDF JS library is optional; print-friendly flow is acceptable).
+• Every table row must have an info icon or tooltip explaining the calculation or assumption used for that row.
+• Monetary values displayed in Indonesian Rupiah (Rp) with thousand separators; negative numbers in parentheses. Dates formatted dd-mm-yyyy.
+• At the bottom of each major table include a short “assumption footnote” restating the key logic (e.g., AWG yield conversions, PV kW → kWh/day using assumed sun-hours).
+• Include a visible “How to use this file” help box describing where to edit assumptions and how to export CSV/PDF.
+• Include a data provenance modal listing the key external benchmarks/sources used and clearly marking which numbers are Estimated vs Sourced.
+• Ensure basic accessibility: readable font sizes, sufficient color contrast, meaningful alt text for non-decorative images (if any), and keyboard navigation for tabs and export controls.
+LOGICAL & REALISTIC DATA REQUIREMENTS
+• Use the land spec and price exactly: 5,996 m² and Rp 6,200,000,000 (include in CAPEX as a fixed line item).
+• Use the organizational and payroll structure previously discussed (target ~79 employees). Provide per-role headcount and monthly salary, plus 20% on-cost for benefits and compute annual payroll.
+• Provide at least two technical design scenarios (Conservative vs Designed/Optimized) for water and electricity production. For each scenario show:
+    ◦ AWG counts and per-unit yields (L/day), rainwater storage capacity, greywater reuse volumes, and how these combine into potable and non-potable liters/day.
+    ◦ PV system size (kW), expected average sun-hours per day, battery storage (kWh), and expected kWh/day output.
+    ◦ CAPEX and OPEX differences between scenarios and a recommended option with rationale.
+• Provide a detailed EV charging model (count of AC/DC chargers, power rating, expected sessions/day, energy per session, price per kWh or per session) and revenue projection.
+• Provide monthly visitor projections (weekday vs weekend; school term vs holidays) for ticketing with conservative / base / optimistic variants and annual totals.
+• For every major numeric item include a one-line justification citing either a benchmark, calculation, or logical assumption (e.g., “AWG unit model X yields ~1,200 L/day at 24°C & 60% RH; top-up from rainwater assumed 30% in wet months — Estimated”).
+• If the fully detailed line-level build-out results in Total CAPEX materially above or below the Rp 200 billion baseline or Total Annual OPEX materially outside Rp 20–25 billion, the report must:
+    ◦ Explicitly state the computed totals.
+    ◦ Provide a concise explanation of why the totals differ (line-by-line contributors).
+    ◦ Present a secondary “cost-reduction / value-engineered” CAPEX scenario that reduces costs while maintaining minimum operational readiness.
+EXPORT & COMPLETION REQUIREMENTS
+• The HTML must be presentation-ready with a clear header (project name), executive summary printable page, and structured tabs.
+• Allow CSV and PDF export (or provide a print-friendly method with instructions).
+• Show formulas, calculation steps, and data provenance inline via tooltips, footnotes, or expandable rows.
+• If any data is Estimated, mark it with the label “Estimated” and show the calculation steps or source where possible.
+• Output must be valid HTML5 and fully self-contained.
